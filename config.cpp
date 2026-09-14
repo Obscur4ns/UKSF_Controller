@@ -31,3 +31,31 @@ class CfgFunctions
         };
     };
 };
+
+class ControllerSchemes
+{
+    class UKSF_Controller
+    {
+        name = "UKSF Controller";
+
+        class Gamepad
+        {
+            class ThumbStickDeadZones
+            {
+                leftX = 0.15;
+                leftY = 0.15;
+                rightX = 0.15;
+                rightY = 0.15;
+            };
+
+            class Actions
+            {
+                CarForward[] = {0x00050000 + 13, 0, {"Gamma", 1.0, 1.0}};
+                CarBack[] = {0x00050000 + 12, 0, {"Gamma", 1.0, 1.0}};
+                CarLinearLeft[] = {0x00050000 + 20, 0, {"Gamma", 1.0, 2.0}};
+                CarLinearRight[] = {0x00050000 + 16, 0, {"Gamma", 1.0, 2.0}};
+                CarHandBrake[] = {0x00050000 + 0};
+            };
+        };
+    };
+};
