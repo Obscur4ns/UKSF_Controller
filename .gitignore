@@ -1,0 +1,7 @@
+*.pbo
+*.bisign
+*.bikey
+*.log
+*.rpt
+.idea/
+.vscode/
